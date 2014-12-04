@@ -23,3 +23,8 @@ pt-BR:
   permission_edit_issue_templates: "Editar Modelos"
   permission_show_issue_templates: "Visualizar Modelos"  
   project_module_issue_templates: "Tarefas Modelos"
+  label_isdefault_help_message: "Verifica se você pode usar esse template como padrão."
+  defaulf_template_loaded: "Carregou o template padrão na área de descrição. (Tracker: %{tracker})"
+  text_no_tracker_enabled: "Quaisquer trackers para este projeto não foram configurados ainda. \ NPor favor, colocá-las em primeiro lugar porque os modelos são atribuídos a trackers do projeto. "
+
+
