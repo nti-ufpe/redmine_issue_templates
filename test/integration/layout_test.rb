@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/../test_helper')
 
-class LayoutTest < ActionController::IntegrationTest
+class LayoutTest < Redmine::IntegrationTest
   fixtures :projects, :trackers, :issue_statuses, :issues,
            :enumerations, :users,
            :projects_trackers,
@@ -38,8 +38,5 @@ class LayoutTest < ActionController::IntegrationTest
                :attributes => { :href => "/projects/ecookbook/issue_templates/new",
                                 }
 
-    # TODO: This test is failed and figure out the reason.
-    #get '/projects/ecookbook/issues/new'
-    #assert_select 'div#template_area'
   end
 end

@@ -8,7 +8,8 @@ class IssueTemplatesIssuesHook < Redmine::Hook::ViewListener
     o = stylesheet_link_tag('issue_templates', :plugin => 'redmine_issue_templates')
     if (context[:controller].class.name == 'IssuesController' and 
       context[:controller].action_name != 'index') or 
-      (context[:controller].class.name == 'IssueTemplatesController')
+      (context[:controller].class.name == 'IssueTemplatesController') or
+      (context[:controller].class.name == 'GlobalIssueTemplatesController')
       o << javascript_include_tag('issue_templates', :plugin => 'redmine_issue_templates')
     end      
     return o
@@ -17,8 +18,9 @@ class IssueTemplatesIssuesHook < Redmine::Hook::ViewListener
   def view_issues_form_details_top(context={})
     action = context[:request].parameters[:action]
     project_id = context[:request].parameters[:project_id]
+    issue_id =  context[:request].parameters[:id]
 
-    return '' unless (action == 'new' or action == 'update_form' or action == 'create') && !project_id.blank?
+    return '' unless (action == 'new' or action == 'update_form' or action == 'create') && !project_id.blank? && issue_id.blank?
     context[:controller].send(
       :render_to_string,
       {

@@ -6,11 +6,13 @@ class IssueTemplateSetting < ActiveRecord::Base
   validates_uniqueness_of :project_id
   validates_presence_of :project_id
 
-  safe_attributes 'help_message', 'enabled'
-	
+  safe_attributes 'help_message', 'enabled', 'inherit_templates', 'should_replaced'
+  attr_accessible :help_message, :enabled, :inherit_templates, :should_replaced
+
+
   def self.find_or_create(project_id)	
-    setting = IssueTemplateSetting.find(:first, :conditions => ['project_id = ?', project_id])
-    unless setting
+    setting = IssueTemplateSetting.where(['project_id = ?', project_id]).first()
+    unless setting.present?
       setting = IssueTemplateSetting.new
       setting.project_id = project_id
       setting.save!      
@@ -20,6 +22,13 @@ class IssueTemplateSetting < ActiveRecord::Base
   
   def enable_help?
     if self.enabled == true && !self.help_message.blank?
+      return true
+    end
+    return false
+  end
+
+  def enabled_inherit_templates?
+    if self.inherit_templates == true
       return true
     end
     return false
