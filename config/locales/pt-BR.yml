@@ -24,7 +24,7 @@ pt-BR:
   permission_show_issue_templates: "Visualizar Modelos"  
   project_module_issue_templates: "Tarefas Modelos"
   label_isdefault_help_message: "Verifica se você pode usar esse modelo como padrão."
-  defaulf_template_loaded: "Carregou o modelo padrão na área de descrição. (Tipo: %{tracker})"
+  defaulf_template_loaded: "Modelo padrão na área de descrição foi carregado. (Tipo: %{tracker})"
   text_no_tracker_enabled: "Nenhum tipo de tarefa foi configurado para esse projeto. \nFavor, configurá-los primeiro porque os modelos são atribuídos aos tipos de tarefa do projeto. "
   bel_enabled_sharing: "Habilita compartilhamento com árvore de projeto."
   label_inherit_templates: "Herda modelos"
