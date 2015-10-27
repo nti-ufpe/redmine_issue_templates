@@ -2,7 +2,7 @@
 pt-BR:
   issue_templates: Modelos
   issue_template: Modelo de tarefas
-  issue_template_note: notas
+  issue_template_note: Notas
   label_enabled: Habilitado
   label_disabled: Desabilitado
   label_help_message: Sobre modelos
@@ -37,7 +37,7 @@ pt-BR:
   label_enabledshaing_help_message: "Se marcado, esse modelo pode ser compartilhado com os descendentes do projeto. (Você deve também ativar a opção Herdar Modelo para os projetos filhos.)"
   label_should_replaced: "Substituir título e descrição"
   label_should_replaced_help_message: "Se marcado, título e descrição existentes serão apagados e substituídos pelo texto do modelo. (O padrão é NÃO MARCADO.)"
-  global_issue_templates: "Modelo de Tarefa Geral"
-  no_issue_templates_for_this_redmine: "Nenhum modelo de Tarefa Geral foi definido para a ferramenta."
+  global_issue_templates: "Modelo de Tarefa Padrão"
+  no_issue_templates_for_this_redmine: "Nenhum modelo de Tarefa Padrão foi definido para a ferramenta."
   only_admin_can_associate_global_template: "Apenas o ADMINISTRADOR pode associar modelos gerais para esse projeto."
   text_no_tracker_enabled_for_global: "Nenhum tipo de tarefa foi definido.Any trackers are not defined yet.\nFavor configurá-las primeiro porque os modelos são atribuídos aos tipos de tarefa."
