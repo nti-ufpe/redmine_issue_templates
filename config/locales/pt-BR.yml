@@ -41,3 +41,4 @@ pt-BR:
   no_issue_templates_for_this_redmine: "Nenhum modelo de Tarefa Padrão foi definido para a ferramenta."
   only_admin_can_associate_global_template: "Apenas o ADMINISTRADOR pode associar modelos gerais para esse projeto."
   text_no_tracker_enabled_for_global: "Nenhum tipo de tarefa foi definido.Any trackers are not defined yet.\nFavor configurá-las primeiro porque os modelos são atribuídos aos tipos de tarefa."
+  label_optional_settings: "Configurações Opcionais"

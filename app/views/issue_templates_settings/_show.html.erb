@@ -19,7 +19,7 @@
                             :class => 'icon icon-add') %></p>
   <p></p>
 <div class="template_box">
-<h2>Optional settings</h2>
+<h2><%= l(:label_optional_settings) %></h2>
   <p><%= l(:about_help_message) %></p>
 <%= labelled_form_for :settings, @issue_templates_setting,
                              :url => {:controller => 'issue_templates_settings',
